@@ -1,0 +1,13 @@
+version: '3'
+services:
+  dev:
+    image: node:11
+    volumes:
+      - .:/usr/src/duel
+    working_dir: /usr/src/duel
+    command: npm start
+    environment:
+      - TOKEN=${TOKEN}
+    ports:
+      - 1234:1234
+    restart: on-failure

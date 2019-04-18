@@ -1,0 +1,30 @@
+{
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "daud-discord",
+  "version": "0.0.1",
+  "description": "A simple duel log system for daud.io, instantly up and running.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "lowdb": "^1.0.0",
+    "node-fetch": "^2.3.0",
+    "request": "^2.88.0"
+  },
+  "engines": {
+    "node": "11.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/daud-discord"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "discord"
+  ]
+}
