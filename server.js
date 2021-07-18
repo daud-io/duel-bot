@@ -159,7 +159,7 @@ client.on("ready", () => {
 
 client.on("message", msg => {
   if (msg.content.toLowerCase().startsWith("!duel")) {
-    var x = msg.mentions.members.array()[0].id;
+    var x = msg.mentions.users.array()[0].id;
     if (msg.content.toLowerCase().startsWith("!duel accept")) {
       if (x) {
         var dduel = db.get("duels").get(duel(msg.author.id, x));
@@ -240,7 +240,7 @@ client.on("message", msg => {
     }
   }
   if (msg.content.toLowerCase().startsWith("!rank")) {
-    var asdf = msg.mentions.members.array()[0] || {};
+    var asdf = msg.mentions.users.array()[0] || {};
     var user = asdf.user || msg.author;
     userkillsdeaths(user.id, x => {
       msg.channel.send(
